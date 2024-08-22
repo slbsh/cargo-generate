@@ -2,15 +2,8 @@
 name = "{{project-name}}"
 version = "0.1.0"
 edition = "2021"
-authors = ["slbsh"]
 license = "0BSD"
+authors = ["slbsh"]
 
 [dependencies]
-
-[profile.release]
-lto = true
-panic = "abort"
-opt-level = "z"
-strip = "all"
-debug = false
-codegen-units = 1
+rand = { version = "0.8", features = ["small_rng"] }
