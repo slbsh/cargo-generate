@@ -11,6 +11,6 @@ license = "0BSD"
 lto = true
 panic = "abort"
 opt-level = "z"
-strip = "all"
 debug = false
+strip = true
 codegen-units = 1
